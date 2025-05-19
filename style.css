@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(img/firewatch-5120-x-2880-background-c7x8pq1ezek7hc0s.jpg);
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+
+}
+
+.quiz-container {
+  background: #e2aaaa8a;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 20px #8bfaeda1;
+  border: 2px solid #000000;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.answers button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #f1aeae;
+  color: #f5f5f5;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 2px #000000;
+  cursor: pointer;
+}
+
+.answers button:hover {
+  background-color: #000000;
+  color: #dd8888;
+}
+
+.answers button.correct {
+  background-color: #00c853 !important;
+  color: white;
+  box-shadow: 0 0 10px #00c853;
+}
+
+.answers button.wrong {
+  background-color: #d50000 !important;
+  color: white;
+  box-shadow: 0 0 10px #d50000;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+#restartBtn {
+  margin-top: 30px;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #d88484;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #000000;
+  display: none;
+}
+
+#restartBtn:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 15px #000000;
+}
+
+.game-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 1px solid #333;
+  z-index: 1000;
+}
+
+.game-footer p {
+  margin: 0;
+  color: #666;
+}
